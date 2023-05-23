@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+	int age;
+	int cntbaby=0,cntschool=0,cntadult=0;
+	int count=0;int n;
+	printf("enter the total people");
+	scanf("%d",&n);
+	while(count <n)
+	{
+		printf("enter the age of person [%d]:",count+1);
+		scanf("%d",&age);
+		if(age>=0 && age<=5)
+		cntbaby++;
+	    else if(age>=6 && age<=17)
+	    cntschool;
+	    else
+	    cntadult++;
+	    count ++;
+	}
+	printf("BABY AGE : %d\n",cntbaby);
+	printf("SCHOOL AGE : %d\n",cntschool);
+	printf("ADULT AGE : %d\n",cntadult);
+	}
+	
